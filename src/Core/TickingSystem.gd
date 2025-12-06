@@ -20,7 +20,6 @@ var grounded:bool;
 var VirusTicksRemaining;
 var MaskTicksRemaining;
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	# TODO: implement player and add the following to their ground detection:
 	# player.GroundEntered.connect(OnGroundEntered);
@@ -30,10 +29,8 @@ func _ready() -> void:
 	# field initialization.
 	VirusTicksRemaining=virusDuration;
 	
-	pass # Replace with function body.
+	pass;
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
 	HandleCoyoteTicks();
 	HandleVirusTicks();
