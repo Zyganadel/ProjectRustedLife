@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://cf60e2hjctkog"]
+[gd_scene load_steps=3 format=3 uid="uid://cf60e2hjctkog"]
 
 [ext_resource type="Script" uid="uid://bmor7cqysh3c5" path="res://src/Core/TickingSystem.gd" id="1_gr1ah"]
+[ext_resource type="Resource" uid="uid://dudaly1g7qpta" path="res://Resources/TimingInfo.tres" id="2_ibvnk"]
 
 [node name="TimingSystem" type="Node"]
 script = ExtResource("1_gr1ah")
+timingInfo = ExtResource("2_ibvnk")
