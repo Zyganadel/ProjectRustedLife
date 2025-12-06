@@ -13,8 +13,8 @@ var player;
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	# TODO: implement player and add the following to their ground detection:
-	player.GroundEntered.connect(OnGroundEntered);
-	player.GroundExited.connect(OnGroundExited);
+	# player.GroundEntered.connect(OnGroundEntered);
+	# player.GroundExited.connect(OnGroundExited);
 	pass # Replace with function body.
 
 
