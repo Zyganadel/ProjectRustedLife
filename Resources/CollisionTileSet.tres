@@ -1,0 +1,16 @@
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://bjn8ocw80ibq"]
+
+[ext_resource type="Texture2D" uid="uid://c57hir10wyg6m" path="res://Art/ProgrammerTiles.png" id="1_iosrm"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v6jrc"]
+texture = ExtResource("1_iosrm")
+texture_region_size = Vector2i(32, 32)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 0, 8, 0, 8, 16, -8, 16)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+
+[resource]
+tile_size = Vector2i(32, 32)
+physics_layer_0/collision_layer = 1
+sources/1 = SubResource("TileSetAtlasSource_v6jrc")

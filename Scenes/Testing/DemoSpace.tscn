@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=4 uid="uid://cqqe28xdimkiw"]
+
+[ext_resource type="TileSet" uid="uid://bjn8ocw80ibq" path="res://Resources/TileSet.tres" id="1_xqri4"]
+[ext_resource type="TileSet" uid="uid://chvi7sev72qf5" path="res://Resources/TriggerTileset.tres" id="2_6fsog"]
+
+[node name="DemoSpace" type="Node2D"]
+texture_filter = 1
+
+[node name="TileMapParent" type="Node2D" parent="."]
+position = Vector2(0, 32)
+
+[node name="Terrain" type="TileMapLayer" parent="TileMapParent"]
+tile_map_data = PackedByteArray("AAABAAAAAQAAAAAAAAACAAAAAQAAAAAAAAADAAAAAQAAAAAAAAAEAAAAAQAAAAAAAAAFAAAAAQAAAAAAAAAGAAAAAQAAAAAAAAAHAAAAAQAAAAAAAAAIAAAAAQAAAAAAAAAJAAAAAQAAAAAAAAAKAAAAAQAAAAAAAAALAAAAAQAAAAAAAAAAAAEAAQAAAAAAAAABAAEAAQAAAAAAAAACAAEAAQAAAAAAAAADAAEAAQAAAAAAAAAEAAEAAQAAAAAAAAAFAAEAAQAAAAAAAAAGAAEAAQAAAAAAAAAHAAEAAQAAAAAAAAAIAAEAAQAAAAAAAAAJAAEAAQAAAAAAAAAKAAEAAQAAAAAAAAALAAEAAQAAAAAAAAD+/wAAAQAAAAAAAAD+/wEAAQAAAAAAAAD//wEAAQAAAAAAAAD/////AQAAAAAAAAD//wAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAP//AQAAAAAAAAA=")
+tile_set = ExtResource("1_xqri4")
+
+[node name="Hazards" type="TileMapLayer" parent="TileMapParent"]
+tile_map_data = PackedByteArray("AAAGAP//AQABAAAAAAAHAP//AQABAAAAAAAIAP//AQABAAAAAAAJAP//AQABAAAAAAA=")
+tile_set = ExtResource("2_6fsog")
