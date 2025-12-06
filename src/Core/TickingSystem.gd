@@ -10,6 +10,10 @@ var player; # throw new NotImplementedException();
 var CoyoteTicksLeft:int;
 var grounded:bool;
 
+# virus things.
+@export_group("Virus Timing")
+@export var virusDuration:int=3600; # 3600 at 60 tps is 60s.
+var virusTimeRemaining;
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
