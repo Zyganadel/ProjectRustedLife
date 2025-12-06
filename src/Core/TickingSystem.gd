@@ -1,13 +1,14 @@
 class_name TickingSystem
 extends Node
 
+# Important references.
+var player; # throw new NotImplementedException();
+
 # coyote time stuff
 @export_group("Coyote Time")
 @export var coyoteTicks:int;
 var CoyoteTicksLeft:int;
 var grounded:bool;
-
-var player;
 
 
 # Called when the node enters the scene tree for the first time.
