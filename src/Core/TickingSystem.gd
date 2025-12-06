@@ -3,6 +3,10 @@ extends Node
 
 # Important references.
 var player; # throw new NotImplementedException();
+var UIManager; # throw new NotImplementedException();
+
+# Events
+signal VirusTimeExpired;
 
 # coyote time stuff
 @export_group("Coyote Time")
@@ -13,8 +17,8 @@ var grounded:bool;
 # virus things.
 @export_group("Virus Timing")
 @export var virusDuration:int=3600; # 3600 at 60 tps is 60s.
-var virusTimeRemaining;
-var maskTimeRemaining;
+var VirusTicksRemaining;
+var MaskTicksRemaining;
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -22,13 +26,17 @@ func _ready() -> void:
 	# player.GroundEntered.connect(OnGroundEntered);
 	# player.GroundExited.connect(OnGroundExited);
 	# player.MaskPickedUp.connect(OnMaskPickup);
+	
+	# field initialization.
+	VirusTicksRemaining=virusDuration;
+	
 	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
 	HandleCoyoteTicks();
-	
+	HandleVirusTicks();
 	pass;
 	
 func HandleCoyoteTicks() -> void:
@@ -40,6 +48,19 @@ func HandleCoyoteTicks() -> void:
 		pass;
 	pass;
 
+func HandleVirusTicks() -> void:
+	if(MaskTicksRemaining>0):
+		MaskTicksRemaining-=1;
+		pass;
+	elif(VirusTicksRemaining>0):
+		VirusTicksRemaining-=1;
+		pass;
+	else:
+		VirusTimeExpired.emit();
+		pass;
+	UIManager.HUD.TimerUpdate(self);
+	pass;
+
 func OnGroundEntered() -> void:
 	grounded=true;
 	pass;
@@ -49,5 +70,5 @@ func OnGroundExited() -> void:
 	pass;
 
 func OnMaskPickup(mask: MaskPickup) -> void:
-	maskTimeRemaining += mask.MaskTime;
+	MaskTicksRemaining += mask.MaskTime;
 	pass;
