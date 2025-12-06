@@ -14,12 +14,14 @@ var grounded:bool;
 @export_group("Virus Timing")
 @export var virusDuration:int=3600; # 3600 at 60 tps is 60s.
 var virusTimeRemaining;
+var maskTimeRemaining;
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	# TODO: implement player and add the following to their ground detection:
 	# player.GroundEntered.connect(OnGroundEntered);
 	# player.GroundExited.connect(OnGroundExited);
+	# player.MaskPickedUp.connect(OnMaskPickup);
 	pass # Replace with function body.
 
 
@@ -44,4 +46,8 @@ func OnGroundEntered() -> void:
 
 func OnGroundExited() -> void:
 	grounded=false;
+	pass;
+
+func OnMaskPickup(mask: MaskPickup) -> void:
+	maskTimeRemaining += mask.MaskTime;
 	pass;
