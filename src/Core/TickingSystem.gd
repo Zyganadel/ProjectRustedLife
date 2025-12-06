@@ -9,17 +9,21 @@ var hud:HUD;
 # Events
 signal VirusTimeExpired;
 
+@export var timingInfo:TimingInfo;
+
 # coyote time stuff
-@export_group("Coyote Time")
-@export var coyoteTicks:int;
+#@export_group("Coyote Time")
+#@export 
+var coyoteTicks:int;
 var CoyoteTicksLeft:int;
 var grounded:bool;
 
 # virus things.
-@export_group("Virus Timing")
-@export var virusDuration:int=3600; # 3600 at 60 tps is 60s.
-var VirusTicksRemaining;
-var MaskTicksRemaining;
+#@export_group("Virus Timing")
+#@export 
+var virusDuration:int=3600; # 3600 at 60 tps is 60s.
+var VirusTicksRemaining: int=0;
+var MaskTicksRemaining: int=0;
 
 func _ready() -> void:
 	# TODO: implement player and add the following to their ground detection:
