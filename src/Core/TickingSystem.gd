@@ -4,6 +4,7 @@ extends Node
 # Important references.
 var player; # throw new NotImplementedException();
 var UIManager; # throw new NotImplementedException();
+var hud:HUD;
 
 # Events
 signal VirusTimeExpired;
@@ -27,6 +28,7 @@ func _ready() -> void:
 	# player.MaskPickedUp.connect(OnMaskPickup);
 	
 	# field initialization.
+	# hud = UIManager.HUD;
 	VirusTicksRemaining=virusDuration;
 	
 	pass;
@@ -55,7 +57,7 @@ func HandleVirusTicks() -> void:
 	else:
 		VirusTimeExpired.emit();
 		pass;
-	UIManager.HUD.TimerUpdate(self);
+	hud.TimerUpdate(self);
 	pass;
 
 func OnGroundEntered() -> void:
