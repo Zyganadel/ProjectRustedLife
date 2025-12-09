@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dkkwtj1ytdmbb" path="res://Art/Relic/RelicHead.png" id="3_rbqiy"]
 [ext_resource type="Texture2D" uid="uid://fbyqqa4aiy30" path="res://Art/Relic/RelicArm.png" id="4_eutlo"]
 [ext_resource type="Texture2D" uid="uid://hvcx21c163tw" path="res://Art/Relic/RelicLeg.png" id="5_0twxl"]
-[ext_resource type="AnimationLibrary" uid="uid://dqbahq7t31p80" path="res://Resources/PlayerAnim.res" id="5_nad1n"]
+[ext_resource type="AnimationLibrary" uid="uid://liwkkpx8msbc" path="res://Resources/PlayerAnim.tres" id="5_nad1n"]
 
 [node name="RelicRig" type="Node2D"]
 texture_filter = 3
