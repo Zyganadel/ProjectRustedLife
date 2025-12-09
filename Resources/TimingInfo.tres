@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="TimingInfo" load_steps=2 format=3 uid="uid://dudaly1g7qpta"]
+
+[ext_resource type="Script" uid="uid://d0obg5y4fqipf" path="res://src/Util/TimingInfo.gd" id="1_mlco3"]
+
+[resource]
+script = ExtResource("1_mlco3")
+metadata/_custom_type_script = "uid://d0obg5y4fqipf"
