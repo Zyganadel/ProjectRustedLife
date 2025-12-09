@@ -1,4 +1,4 @@
-[gd_resource type="AnimationLibrary" load_steps=3 format=3 uid="uid://ckd0k1e5iu725"]
+[gd_resource type="AnimationLibrary" load_steps=4 format=3 uid="uid://ckd0k1e5iu725"]
 
 [sub_resource type="Animation" id="Animation_2pcqx"]
 resource_name = "Idle"
@@ -298,8 +298,12 @@ tracks/11/keys = {
 "values": [-0.2617994, 0.0, 0.2617994, 0.7853982, 0.17453292, -0.17453292, -0.7853982, -0.7853982, -0.2617994]
 }
 
+[sub_resource type="Animation" id="Animation_paxm7"]
+resource_name = "Jump"
+
 [resource]
 _data = {
 &"Idle": SubResource("Animation_2pcqx"),
+&"Jump": SubResource("Animation_paxm7"),
 &"Run": SubResource("Animation_801gg")
 }
