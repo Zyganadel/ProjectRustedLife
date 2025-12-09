@@ -1,4 +1,4 @@
-[gd_resource type="AnimationLibrary" load_steps=3 format=3 uid="uid://liwkkpx8msbc"]
+[gd_resource type="AnimationLibrary" load_steps=3 format=3 uid="uid://ckd0k1e5iu725"]
 
 [sub_resource type="Animation" id="Animation_2pcqx"]
 resource_name = "Idle"
@@ -151,6 +151,8 @@ tracks/11/keys = {
 
 [sub_resource type="Animation" id="Animation_801gg"]
 resource_name = "Run"
+length = 2.0000033
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -158,10 +160,10 @@ tracks/0/path = NodePath("ChestBone:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.20000002),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 0.16666667, 0.6666667, 1, 1.1666666, 1.6666667, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(0, 0), Vector2(0, 2)]
+"values": [Vector2(0, 0), Vector2(0, 1), Vector2(0, -1), Vector2(0, 0), Vector2(0, 1), Vector2(0, -1), Vector2(0, 0)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -254,10 +256,10 @@ tracks/8/path = NodePath("ChestBone/LegBone:position")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.5, 1, 1.3333334, 1.6666667, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(-2, 4)]
+"values": [Vector2(-2, 4), Vector2(-2, 4), Vector2(-2, 7), Vector2(-2, 7), Vector2(-2, 4), Vector2(-2, 4)]
 }
 tracks/9/type = "value"
 tracks/9/imported = false
@@ -266,10 +268,10 @@ tracks/9/path = NodePath("ChestBone/LegBone:rotation")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.16666667, 0.33333334, 0.5, 0.6666667, 1, 1.1666666, 1.3333334, 1.5000001, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [0.7853982]
+"values": [0.7853982, 0.17453292, -0.17453292, -0.7853982, -0.7853982, -0.2617994, 0.0, 0.2617994, 0.2617994, 0.7853982]
 }
 tracks/10/type = "value"
 tracks/10/imported = false
@@ -278,10 +280,10 @@ tracks/10/path = NodePath("ChestBone/LegBone2:position")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.33333337, 0.66666675, 1, 1.5000001, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(4, 8)]
+"values": [Vector2(4, 8), Vector2(4, 8), Vector2(4, 5), Vector2(4, 5), Vector2(4, 5), Vector2(4, 8)]
 }
 tracks/11/type = "value"
 tracks/11/imported = false
@@ -290,10 +292,10 @@ tracks/11/path = NodePath("ChestBone/LegBone2:rotation")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.16666663, 0.33333337, 0.5000001, 1, 1.1666666, 1.3333334, 1.5, 1.6666667, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [0.0]
+"values": [-0.2617994, 0.0, 0.2617994, 0.2617994, 0.7853982, 0.17453292, -0.17453292, -0.7853982, -0.7853982, -0.2617994]
 }
 
 [resource]
