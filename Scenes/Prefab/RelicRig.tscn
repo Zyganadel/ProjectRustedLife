@@ -185,6 +185,7 @@ position = Vector2(-1, 4)
 texture = ExtResource("4_eutlo")
 
 [node name="ArmBone2" type="Node2D" parent="ChestBone"]
+z_index = -1
 position = Vector2(6, -3)
 
 [node name="Sprite2D" type="Sprite2D" parent="ChestBone/ArmBone2"]
@@ -216,3 +217,4 @@ libraries = {
 &"PlayerAnim": ExtResource("5_nad1n")
 }
 autoplay = "PlayerAnim/Idle"
+speed_scale = 4.0
