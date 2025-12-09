@@ -1,0 +1,122 @@
+[gd_scene load_steps=6 format=3 uid="uid://cys7whfdbh4ja"]
+
+[ext_resource type="Material" uid="uid://bmg1j5eijoyhc" path="res://Resources/Shaders/new_shader_material.tres" id="1_i81lq"]
+[ext_resource type="Texture2D" uid="uid://54omlo6gh2tw" path="res://Art/IMG_0289.jpg" id="1_qwdg1"]
+[ext_resource type="FontFile" uid="uid://bns2d66tws7is" path="res://Art/Silkscreen-Regular.ttf" id="2_jif5k"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_y5brd"]
+font = ExtResource("2_jif5k")
+font_size = 50
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_qwdg1"]
+font = ExtResource("2_jif5k")
+font_size = 30
+outline_size = 7
+outline_color = Color(0, 0, 0, 1)
+
+[node name="main_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_qwdg1")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 144.0
+offset_top = 52.0
+offset_right = 88.0
+offset_bottom = 214.0
+grow_horizontal = 2
+text = "Game Title"
+label_settings = SubResource("LabelSettings_y5brd")
+vertical_alignment = 1
+
+[node name="startgame_button" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 124.0
+offset_top = 214.0
+offset_right = 1313.0
+offset_bottom = 323.0
+flat = true
+
+[node name="start_label" type="Label" parent="Control/startgame_button"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.23300001
+anchor_bottom = 1.0
+offset_right = -0.037017822
+grow_horizontal = 2
+grow_vertical = 2
+text = "Start booting"
+label_settings = SubResource("LabelSettings_qwdg1")
+vertical_alignment = 1
+
+[node name="settings_button" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 124.0
+offset_top = 298.0
+offset_right = 426.0
+offset_bottom = 407.0
+flat = true
+
+[node name="settings_label" type="Label" parent="Control/settings_button"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Configurations"
+label_settings = SubResource("LabelSettings_qwdg1")
+vertical_alignment = 1
+
+[node name="exit_button" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 124.0
+offset_top = 407.0
+offset_right = 334.0
+offset_bottom = 494.0
+flat = true
+
+[node name="exit_label" type="Label" parent="Control/exit_button"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Power off"
+label_settings = SubResource("LabelSettings_qwdg1")
+vertical_alignment = 1
+
+[node name="old_tv_shader" type="ColorRect" parent="."]
+material = ExtResource("1_i81lq")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
