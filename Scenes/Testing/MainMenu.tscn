@@ -3,7 +3,7 @@
 [ext_resource type="Material" uid="uid://bmg1j5eijoyhc" path="res://Resources/Shaders/new_shader_material.tres" id="1_i81lq"]
 [ext_resource type="Texture2D" uid="uid://54omlo6gh2tw" path="res://Art/IMG_0289.jpg" id="1_qwdg1"]
 [ext_resource type="FontFile" uid="uid://bns2d66tws7is" path="res://Art/Silkscreen-Regular.ttf" id="2_jif5k"]
-[ext_resource type="Script" uid="uid://2jejrq0jxwlj" path="res://Scenes/Testing/LettersStuff.gd" id="2_y5brd"]
+[ext_resource type="Script" uid="uid://2jejrq0jxwlj" path="res://src/UI/LettersStuff.gd" id="2_y5brd"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_y5brd"]
 font = ExtResource("2_jif5k")
