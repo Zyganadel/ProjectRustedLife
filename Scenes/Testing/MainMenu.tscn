@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://cys7whfdbh4ja"]
+[gd_scene load_steps=7 format=3 uid="uid://cys7whfdbh4ja"]
 
 [ext_resource type="Material" uid="uid://bmg1j5eijoyhc" path="res://Resources/Shaders/new_shader_material.tres" id="1_i81lq"]
 [ext_resource type="Texture2D" uid="uid://54omlo6gh2tw" path="res://Art/IMG_0289.jpg" id="1_qwdg1"]
 [ext_resource type="FontFile" uid="uid://bns2d66tws7is" path="res://Art/Silkscreen-Regular.ttf" id="2_jif5k"]
+[ext_resource type="Script" uid="uid://2jejrq0jxwlj" path="res://Scenes/Testing/LettersStuff.gd" id="2_y5brd"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_y5brd"]
 font = ExtResource("2_jif5k")
@@ -40,14 +41,15 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("2_y5brd")
 
-[node name="Label" type="Label" parent="letters_stuff"]
+[node name="game_title" type="Label" parent="letters_stuff"]
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
 offset_left = 144.0
 offset_top = 52.0
-offset_right = 88.0
+offset_right = -675.0
 offset_bottom = 214.0
 grow_horizontal = 2
 text = "Game Title"
@@ -58,16 +60,15 @@ vertical_alignment = 1
 layout_mode = 0
 offset_left = 124.0
 offset_top = 214.0
-offset_right = 1313.0
+offset_right = 426.0
 offset_bottom = 323.0
 flat = true
 
 [node name="start_label" type="Label" parent="letters_stuff/startgame_button"]
 layout_mode = 1
-anchors_preset = -1
-anchor_right = 0.23300001
+anchors_preset = 15
+anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = -0.037017822
 grow_horizontal = 2
 grow_vertical = 2
 text = "Start booting"
@@ -113,6 +114,8 @@ label_settings = SubResource("LabelSettings_qwdg1")
 vertical_alignment = 1
 
 [node name="old_tv_shader" type="ColorRect" parent="."]
+light_mask = 0
+visibility_layer = 512
 material = ExtResource("1_i81lq")
 layout_mode = 1
 anchors_preset = 15
@@ -120,3 +123,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
+
+[connection signal="button_down" from="letters_stuff/startgame_button" to="letters_stuff" method="Onstartgame_buttonbutton_down"]
+[connection signal="button_down" from="letters_stuff/settings_button" to="letters_stuff" method="Onsettings_buttonbutton_down"]
+[connection signal="button_down" from="letters_stuff/exit_button" to="letters_stuff" method="Onexit_buttonbutton_down"]
