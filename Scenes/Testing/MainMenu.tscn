@@ -33,7 +33,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_qwdg1")
 
-[node name="Control" type="Control" parent="."]
+[node name="letters_stuff" type="Control" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -41,7 +41,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Label" type="Label" parent="Control"]
+[node name="Label" type="Label" parent="letters_stuff"]
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
@@ -54,7 +54,7 @@ text = "Game Title"
 label_settings = SubResource("LabelSettings_y5brd")
 vertical_alignment = 1
 
-[node name="startgame_button" type="Button" parent="Control"]
+[node name="startgame_button" type="Button" parent="letters_stuff"]
 layout_mode = 0
 offset_left = 124.0
 offset_top = 214.0
@@ -62,7 +62,7 @@ offset_right = 1313.0
 offset_bottom = 323.0
 flat = true
 
-[node name="start_label" type="Label" parent="Control/startgame_button"]
+[node name="start_label" type="Label" parent="letters_stuff/startgame_button"]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 0.23300001
@@ -74,7 +74,7 @@ text = "Start booting"
 label_settings = SubResource("LabelSettings_qwdg1")
 vertical_alignment = 1
 
-[node name="settings_button" type="Button" parent="Control"]
+[node name="settings_button" type="Button" parent="letters_stuff"]
 layout_mode = 0
 offset_left = 124.0
 offset_top = 298.0
@@ -82,7 +82,7 @@ offset_right = 426.0
 offset_bottom = 407.0
 flat = true
 
-[node name="settings_label" type="Label" parent="Control/settings_button"]
+[node name="settings_label" type="Label" parent="letters_stuff/settings_button"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -93,7 +93,7 @@ text = "Configurations"
 label_settings = SubResource("LabelSettings_qwdg1")
 vertical_alignment = 1
 
-[node name="exit_button" type="Button" parent="Control"]
+[node name="exit_button" type="Button" parent="letters_stuff"]
 layout_mode = 0
 offset_left = 124.0
 offset_top = 407.0
@@ -101,7 +101,7 @@ offset_right = 334.0
 offset_bottom = 494.0
 flat = true
 
-[node name="exit_label" type="Label" parent="Control/exit_button"]
+[node name="exit_label" type="Label" parent="letters_stuff/exit_button"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
