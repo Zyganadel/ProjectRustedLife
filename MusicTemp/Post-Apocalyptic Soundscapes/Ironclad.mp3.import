@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://elw8y5au42ed"
+path="res://.godot/imported/Ironclad.mp3-50c22b9d29ab049a42adf85740723691.mp3str"
+
+[deps]
+
+source_file="res://MusicTemp/Post-Apocalyptic Soundscapes/Ironclad.mp3"
+dest_files=["res://.godot/imported/Ironclad.mp3-50c22b9d29ab049a42adf85740723691.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

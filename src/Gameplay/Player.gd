@@ -3,8 +3,8 @@ extends CharacterBody2D
 const JUMP_HEIGHT = -350.0
 const JUMP_BUFFER_TIMER = 0.15
 
-const SPEED: float = 200.0
-const ACCELERATION: float = 16.0
+const SPEED: float = 150.0
+const ACCELERATION: float = 10.0
 const FRICTION: float = 12.5
 const GRAVITY: float = 14.5
 

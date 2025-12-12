@@ -11,9 +11,18 @@ config_version=5
 [application]
 
 config/name="ProjectRustedLife"
-config/tags=PackedStringArray("gamejam", "gdscript only")
+run/main_scene="uid://cys7whfdbh4ja"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+ConfigFileHandler="*res://src/Util/ConfigFileHandler.gd"
+
+[display]
+
+window/size/mode=3
+window/stretch/mode="canvas_items"
 
 [dotnet]
 

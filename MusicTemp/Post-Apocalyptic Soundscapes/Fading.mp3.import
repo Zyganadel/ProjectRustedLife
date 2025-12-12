@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cfuxkkhfwrljw"
+path="res://.godot/imported/Fading.mp3-e3e1dd3a60a67927a4b45081713ab606.mp3str"
+
+[deps]
+
+source_file="res://MusicTemp/Post-Apocalyptic Soundscapes/Fading.mp3"
+dest_files=["res://.godot/imported/Fading.mp3-e3e1dd3a60a67927a4b45081713ab606.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

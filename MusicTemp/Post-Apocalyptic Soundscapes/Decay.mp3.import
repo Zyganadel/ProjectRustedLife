@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://gd8p221ct7ns"
+path="res://.godot/imported/Decay.mp3-696f5ad8d0dc45fe3b2360ae085095ae.mp3str"
+
+[deps]
+
+source_file="res://MusicTemp/Post-Apocalyptic Soundscapes/Decay.mp3"
+dest_files=["res://.godot/imported/Decay.mp3-696f5ad8d0dc45fe3b2360ae085095ae.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

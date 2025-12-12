@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cm4rb54he832v"
+path="res://.godot/imported/Walker.mp3-50a3e372419c3fb0a55a5092d81069d1.mp3str"
+
+[deps]
+
+source_file="res://MusicTemp/Post-Apocalyptic Soundscapes/Walker.mp3"
+dest_files=["res://.godot/imported/Walker.mp3-50a3e372419c3fb0a55a5092d81069d1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

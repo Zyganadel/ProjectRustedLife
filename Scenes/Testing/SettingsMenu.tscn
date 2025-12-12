@@ -1,0 +1,197 @@
+[gd_scene load_steps=16 format=3 uid="uid://cn6yqsaib1ngc"]
+
+[ext_resource type="FontFile" uid="uid://bns2d66tws7is" path="res://Art/Silkscreen-Regular.ttf" id="1_0jn24"]
+[ext_resource type="Script" uid="uid://32pibx8evn4y" path="res://src/UI/SettingsMenu.gd" id="1_6qfnx"]
+[ext_resource type="Material" uid="uid://bmg1j5eijoyhc" path="res://Resources/Shaders/new_shader_material.tres" id="1_p2xwo"]
+[ext_resource type="AudioStream" uid="uid://cwwomt35cldp8" path="res://MusicTemp/Post-Apocalyptic Soundscapes/Echoes.mp3" id="2_tf5ad"]
+[ext_resource type="Script" uid="uid://duna1fun2h3ik" path="res://Scenes/Testing/VolumeControl.gd" id="3_gfuww"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_6qfnx"]
+font = ExtResource("1_0jn24")
+font_size = 50
+font_color = Color(0.08627451, 0.35686275, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tf5ad"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_tf5ad"]
+font = ExtResource("1_0jn24")
+font_size = 20
+outline_size = 6
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_6qfnx"]
+color = Color(1, 1, 1, 1)
+thickness = 6
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_gfuww"]
+color = Color(0.08627451, 0.35686275, 0, 1)
+thickness = 6
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_tf5ad"]
+color = Color(0.08627451, 0.35686275, 0, 1)
+thickness = 6
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6pc2i"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_k7btn"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8oov1"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8a5uc"]
+
+[node name="settings_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6qfnx")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_tf5ad")
+autoplay = true
+bus = &"MainMusic"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.06666667, 0.09411765, 1)
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ConfigLabel" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.127
+offset_bottom = -0.29600525
+grow_horizontal = 2
+text = "Configurations"
+label_settings = SubResource("LabelSettings_6qfnx")
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Panel" type="Panel" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 135.0
+offset_top = 98.0
+offset_right = -148.0
+offset_bottom = -145.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_tf5ad")
+
+[node name="Volumelabel" type="Label" parent="Control/Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.023000002
+anchor_top = 0.047000002
+anchor_right = 0.25
+anchor_bottom = 0.123
+offset_left = -3.9870014
+offset_top = -0.035001755
+offset_right = -0.25
+offset_bottom = 0.18499756
+grow_horizontal = 2
+text = "Music volume"
+label_settings = SubResource("LabelSettings_tf5ad")
+vertical_alignment = 1
+
+[node name="VolumeControl" type="HSlider" parent="Control/Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.023014959
+anchor_top = 0.11851852
+anchor_right = 0.98619103
+anchor_bottom = 0.19135803
+offset_bottom = 13.741974
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/slider = SubResource("StyleBoxLine_6qfnx")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_gfuww")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_tf5ad")
+max_value = 1.0
+step = 0.05
+value = 0.5
+script = ExtResource("3_gfuww")
+audio_bus_name = "MainMusic"
+metadata/_edit_use_anchors_ = true
+
+[node name="FSbutton" type="Label" parent="Control/Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.023000002
+anchor_top = 0.277
+anchor_right = 0.2
+anchor_bottom = 0.333
+offset_left = 0.012998581
+offset_top = -0.18500519
+offset_right = 0.19999695
+offset_bottom = 4.1349945
+text = "Full screen"
+label_settings = SubResource("LabelSettings_tf5ad")
+
+[node name="CheckButton" type="CheckButton" parent="Control/Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.9113924
+anchor_top = 0.2765432
+anchor_right = 0.96202534
+anchor_bottom = 0.35555556
+theme_override_styles/hover = SubResource("StyleBoxTexture_6pc2i")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_k7btn")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_8oov1")
+theme_override_styles/focus = SubResource("StyleBoxTexture_8a5uc")
+theme_override_colors/button_checked_color = Color(0.08627451, 0.35686275, 0, 1)
+theme_override_colors/button_unchecked_color = Color(0.38464698, 5.8358535e-07, 1.6845763e-07, 1)
+button_pressed = true
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="returnx3" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.40711805
+anchor_top = 0.81635803
+anchor_right = 0.5668403
+anchor_bottom = 0.8888889
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_pressed_color = Color(0.08627451, 0.35686275, 0, 1)
+theme_override_colors/font_hover_color = Color(0.08627451, 0.35686275, 0, 1)
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("1_0jn24")
+theme_override_font_sizes/font_size = 30
+text = "return"
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="tv_effectx3" type="ColorRect" parent="."]
+material = ExtResource("1_p2xwo")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[connection signal="drag_ended" from="Control/Panel/VolumeControl" to="." method="Onvolume_controldrag_ended"]
+[connection signal="value_changed" from="Control/Panel/VolumeControl" to="Control/Panel/VolumeControl" method="Onvalue_changed"]
+[connection signal="toggled" from="Control/Panel/CheckButton" to="." method="Oncheck_buttontoggled"]
+[connection signal="button_down" from="returnx3" to="." method="Onbuttonbutton_down"]

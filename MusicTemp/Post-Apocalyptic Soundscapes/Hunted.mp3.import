@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cvwq3u7xi41hq"
+path="res://.godot/imported/Hunted.mp3-7af3bce9468b36486653bec48ecca668.mp3str"
+
+[deps]
+
+source_file="res://MusicTemp/Post-Apocalyptic Soundscapes/Hunted.mp3"
+dest_files=["res://.godot/imported/Hunted.mp3-7af3bce9468b36486653bec48ecca668.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
