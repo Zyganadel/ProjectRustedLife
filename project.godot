@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="ProjectRustedLife"
-run/main_scene="uid://cys7whfdbh4ja"
+config/tags=PackedStringArray("gamejam", "gdscript only")
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
