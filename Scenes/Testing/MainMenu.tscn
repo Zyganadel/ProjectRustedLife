@@ -1,0 +1,137 @@
+[gd_scene load_steps=9 format=3 uid="uid://cys7whfdbh4ja"]
+
+[ext_resource type="Material" uid="uid://bmg1j5eijoyhc" path="res://Resources/Shaders/new_shader_material.tres" id="1_i81lq"]
+[ext_resource type="Texture2D" uid="uid://54omlo6gh2tw" path="res://Art/IMG_0289.jpg" id="1_qwdg1"]
+[ext_resource type="FontFile" uid="uid://bns2d66tws7is" path="res://Art/Silkscreen-Regular.ttf" id="2_jif5k"]
+[ext_resource type="Script" uid="uid://2jejrq0jxwlj" path="res://src/UI/LettersStuff.gd" id="2_y5brd"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_y5brd"]
+font = ExtResource("2_jif5k")
+font_size = 50
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="FontVariation" id="FontVariation_jif5k"]
+base_font = ExtResource("2_jif5k")
+
+[sub_resource type="FontVariation" id="FontVariation_y5brd"]
+base_font = ExtResource("2_jif5k")
+
+[sub_resource type="FontVariation" id="FontVariation_wrn8v"]
+base_font = ExtResource("2_jif5k")
+
+[node name="main_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_qwdg1")
+
+[node name="letters_stuff" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_y5brd")
+
+[node name="game_title" type="Label" parent="letters_stuff"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.125
+anchor_top = 0.080000006
+anchor_right = 0.82100004
+anchor_bottom = 0.33
+offset_top = 0.15999603
+offset_right = 0.20794678
+offset_bottom = 0.1599884
+grow_horizontal = 2
+text = "No_space.exe"
+label_settings = SubResource("LabelSettings_y5brd")
+vertical_alignment = 1
+
+[node name="startgame_button" type="Button" parent="letters_stuff"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.108
+anchor_top = 0.33
+anchor_right = 0.37
+anchor_bottom = 0.46
+offset_left = -0.41600037
+offset_top = 0.1599884
+offset_right = -0.23999023
+offset_bottom = -0.08001709
+theme_override_colors/font_pressed_color = Color(0.08627451, 0.35686275, 0, 1)
+theme_override_colors/font_hover_color = Color(0.08627451, 0.35686275, 0, 1)
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = SubResource("FontVariation_jif5k")
+theme_override_font_sizes/font_size = 30
+text = "Start booting"
+flat = true
+alignment = 0
+
+[node name="settings_button" type="Button" parent="letters_stuff"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.108
+anchor_top = 0.46
+anchor_right = 0.37
+anchor_bottom = 0.588
+offset_left = -0.41600037
+offset_top = -0.08001709
+offset_right = -0.23999023
+offset_bottom = -0.023986816
+theme_override_colors/font_pressed_color = Color(0.08627451, 0.35686275, 0, 1)
+theme_override_colors/font_hover_color = Color(0.08627451, 0.35686275, 0, 1)
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = SubResource("FontVariation_y5brd")
+theme_override_font_sizes/font_size = 30
+text = "settings"
+flat = true
+alignment = 0
+
+[node name="exit_button" type="Button" parent="letters_stuff"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.108
+anchor_top = 0.588
+anchor_right = 0.37
+anchor_bottom = 0.72200006
+offset_left = -0.41600037
+offset_top = -0.023986816
+offset_right = -0.23999023
+offset_bottom = 0.14395142
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = SubResource("FontVariation_wrn8v")
+theme_override_font_sizes/font_size = 30
+text = "Turn off"
+flat = true
+alignment = 0
+
+[node name="old_tv_shader" type="ColorRect" parent="."]
+light_mask = 0
+visibility_layer = 512
+material = ExtResource("1_i81lq")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[connection signal="button_down" from="letters_stuff/startgame_button" to="letters_stuff" method="Onstartgame_buttonbutton_down"]
+[connection signal="button_down" from="letters_stuff/settings_button" to="letters_stuff" method="Onsettings_buttonbutton_down"]
+[connection signal="button_down" from="letters_stuff/exit_button" to="letters_stuff" method="Onexit_buttonbutton_down"]

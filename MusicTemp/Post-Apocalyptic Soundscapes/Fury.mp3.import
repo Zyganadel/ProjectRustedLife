@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bc8hox8hfneql"
+path="res://.godot/imported/Fury.mp3-7b8a0abc56121f9314dcfcbf335445bc.mp3str"
+
+[deps]
+
+source_file="res://MusicTemp/Post-Apocalyptic Soundscapes/Fury.mp3"
+dest_files=["res://.godot/imported/Fury.mp3-7b8a0abc56121f9314dcfcbf335445bc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

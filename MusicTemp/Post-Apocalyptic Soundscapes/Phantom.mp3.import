@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ducgwow2gadca"
+path="res://.godot/imported/Phantom.mp3-832b54228a84633f60b2396ebdc894bc.mp3str"
+
+[deps]
+
+source_file="res://MusicTemp/Post-Apocalyptic Soundscapes/Phantom.mp3"
+dest_files=["res://.godot/imported/Phantom.mp3-832b54228a84633f60b2396ebdc894bc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

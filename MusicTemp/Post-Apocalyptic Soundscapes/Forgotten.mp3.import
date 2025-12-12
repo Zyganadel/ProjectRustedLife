@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://davr6m4vgcbcv"
+path="res://.godot/imported/Forgotten.mp3-2801c25ce5347e709733b163daa80663.mp3str"
+
+[deps]
+
+source_file="res://MusicTemp/Post-Apocalyptic Soundscapes/Forgotten.mp3"
+dest_files=["res://.godot/imported/Forgotten.mp3-2801c25ce5347e709733b163daa80663.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
