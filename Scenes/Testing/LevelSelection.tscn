@@ -1,4 +1,13 @@
-[gd_scene format=3 uid="uid://ii6l6x1ifhuy"]
+[gd_scene load_steps=5 format=3 uid="uid://ii6l6x1ifhuy"]
+
+[ext_resource type="Script" uid="uid://fsh8sgg1px11" path="res://src/UI/LevelSelection.gd" id="1_h70x6"]
+[ext_resource type="Material" uid="uid://bmg1j5eijoyhc" path="res://Resources/Shaders/new_shader_material.tres" id="1_rvv4v"]
+[ext_resource type="FontFile" uid="uid://bns2d66tws7is" path="res://Art/Silkscreen-Regular.ttf" id="2_mn52d"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_h70x6"]
+font = ExtResource("2_mn52d")
+font_size = 50
+font_color = Color(0.088099785, 0.35490647, 4.813075e-08, 1)
 
 [node name="level_selection" type="Control"]
 layout_mode = 3
@@ -7,12 +16,91 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_h70x6")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="blackbackground" type="ColorRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+color = Color(0, 0.06666667, 0.09411765, 1)
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="title" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.127
+offset_bottom = -0.29600525
+grow_horizontal = 2
+text = "Recall memories"
+label_settings = SubResource("LabelSettings_h70x6")
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="GridContainer" type="GridContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.049000002
+anchor_top = 0.34600002
+anchor_right = 0.94000006
+anchor_bottom = 0.63900006
+offset_left = -0.44800186
+offset_top = -0.20800781
+offset_right = 0.11987305
+offset_bottom = -0.072052
+grow_horizontal = 2
+grow_vertical = 2
+columns = 4
+
+[node name="ColorRect" type="ColorRect" parent="Control/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ColorRect2" type="ColorRect" parent="Control/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ColorRect3" type="ColorRect" parent="Control/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ColorRect4" type="ColorRect" parent="Control/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="tv_effectx2" type="ColorRect" parent="Control"]
+material = ExtResource("1_rvv4v")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
 color = Color(0, 0, 0, 1)
+
+[node name="returnx2" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.4079861
+anchor_top = 0.7561728
+anchor_right = 0.5842014
+anchor_bottom = 0.8796296
+offset_top = 3.0517578e-05
+grow_horizontal = 2
+grow_vertical = 0
+metadata/_edit_use_anchors_ = true

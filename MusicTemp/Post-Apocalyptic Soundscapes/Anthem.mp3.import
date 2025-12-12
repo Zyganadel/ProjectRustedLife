@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b2krly8p1u4fv"
+path="res://.godot/imported/Anthem.mp3-eeb0e6d8276e5c3a23827f6444d60987.mp3str"
+
+[deps]
+
+source_file="res://MusicTemp/Post-Apocalyptic Soundscapes/Anthem.mp3"
+dest_files=["res://.godot/imported/Anthem.mp3-eeb0e6d8276e5c3a23827f6444d60987.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

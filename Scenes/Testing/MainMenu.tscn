@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cys7whfdbh4ja"]
+[gd_scene load_steps=9 format=3 uid="uid://cys7whfdbh4ja"]
 
 [ext_resource type="Material" uid="uid://bmg1j5eijoyhc" path="res://Resources/Shaders/new_shader_material.tres" id="1_i81lq"]
 [ext_resource type="Texture2D" uid="uid://54omlo6gh2tw" path="res://Art/IMG_0289.jpg" id="1_qwdg1"]
@@ -11,11 +11,14 @@ font_size = 50
 outline_size = 10
 outline_color = Color(0, 0, 0, 1)
 
-[sub_resource type="LabelSettings" id="LabelSettings_qwdg1"]
-font = ExtResource("2_jif5k")
-font_size = 30
-outline_size = 7
-outline_color = Color(0, 0, 0, 1)
+[sub_resource type="FontVariation" id="FontVariation_jif5k"]
+base_font = ExtResource("2_jif5k")
+
+[sub_resource type="FontVariation" id="FontVariation_y5brd"]
+base_font = ExtResource("2_jif5k")
+
+[sub_resource type="FontVariation" id="FontVariation_wrn8v"]
+base_font = ExtResource("2_jif5k")
 
 [node name="main_menu" type="Control"]
 layout_mode = 3
@@ -45,73 +48,77 @@ script = ExtResource("2_y5brd")
 
 [node name="game_title" type="Label" parent="letters_stuff"]
 layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_left = 144.0
-offset_top = 52.0
-offset_right = -675.0
-offset_bottom = 214.0
+anchors_preset = -1
+anchor_left = 0.125
+anchor_top = 0.080000006
+anchor_right = 0.82100004
+anchor_bottom = 0.33
+offset_top = 0.15999603
+offset_right = 0.20794678
+offset_bottom = 0.1599884
 grow_horizontal = 2
-text = "Game Title"
+text = "No_space.exe"
 label_settings = SubResource("LabelSettings_y5brd")
 vertical_alignment = 1
 
 [node name="startgame_button" type="Button" parent="letters_stuff"]
-layout_mode = 0
-offset_left = 124.0
-offset_top = 214.0
-offset_right = 426.0
-offset_bottom = 323.0
-flat = true
-
-[node name="start_label" type="Label" parent="letters_stuff/startgame_button"]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+anchors_preset = -1
+anchor_left = 0.108
+anchor_top = 0.33
+anchor_right = 0.37
+anchor_bottom = 0.46
+offset_left = -0.41600037
+offset_top = 0.1599884
+offset_right = -0.23999023
+offset_bottom = -0.08001709
+theme_override_colors/font_pressed_color = Color(0.08627451, 0.35686275, 0, 1)
+theme_override_colors/font_hover_color = Color(0.08627451, 0.35686275, 0, 1)
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = SubResource("FontVariation_jif5k")
+theme_override_font_sizes/font_size = 30
 text = "Start booting"
-label_settings = SubResource("LabelSettings_qwdg1")
-vertical_alignment = 1
+flat = true
+alignment = 0
 
 [node name="settings_button" type="Button" parent="letters_stuff"]
-layout_mode = 0
-offset_left = 124.0
-offset_top = 298.0
-offset_right = 426.0
-offset_bottom = 407.0
-flat = true
-
-[node name="settings_label" type="Label" parent="letters_stuff/settings_button"]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-text = "Configurations"
-label_settings = SubResource("LabelSettings_qwdg1")
-vertical_alignment = 1
+anchors_preset = -1
+anchor_left = 0.108
+anchor_top = 0.46
+anchor_right = 0.37
+anchor_bottom = 0.588
+offset_left = -0.41600037
+offset_top = -0.08001709
+offset_right = -0.23999023
+offset_bottom = -0.023986816
+theme_override_colors/font_pressed_color = Color(0.08627451, 0.35686275, 0, 1)
+theme_override_colors/font_hover_color = Color(0.08627451, 0.35686275, 0, 1)
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = SubResource("FontVariation_y5brd")
+theme_override_font_sizes/font_size = 30
+text = "settings"
+flat = true
+alignment = 0
 
 [node name="exit_button" type="Button" parent="letters_stuff"]
-layout_mode = 0
-offset_left = 124.0
-offset_top = 407.0
-offset_right = 334.0
-offset_bottom = 494.0
-flat = true
-
-[node name="exit_label" type="Label" parent="letters_stuff/exit_button"]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-text = "Power off"
-label_settings = SubResource("LabelSettings_qwdg1")
-vertical_alignment = 1
+anchors_preset = -1
+anchor_left = 0.108
+anchor_top = 0.588
+anchor_right = 0.37
+anchor_bottom = 0.72200006
+offset_left = -0.41600037
+offset_top = -0.023986816
+offset_right = -0.23999023
+offset_bottom = 0.14395142
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = SubResource("FontVariation_wrn8v")
+theme_override_font_sizes/font_size = 30
+text = "Turn off"
+flat = true
+alignment = 0
 
 [node name="old_tv_shader" type="ColorRect" parent="."]
 light_mask = 0

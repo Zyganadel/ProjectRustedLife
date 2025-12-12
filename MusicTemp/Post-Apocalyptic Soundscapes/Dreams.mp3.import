@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://brhf44gipqwk8"
+path="res://.godot/imported/Dreams.mp3-2f60b24d97a2a60dbfc9744b5986fd1e.mp3str"
+
+[deps]
+
+source_file="res://MusicTemp/Post-Apocalyptic Soundscapes/Dreams.mp3"
+dest_files=["res://.godot/imported/Dreams.mp3-2f60b24d97a2a60dbfc9744b5986fd1e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

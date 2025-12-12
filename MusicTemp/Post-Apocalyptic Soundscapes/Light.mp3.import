@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://8okns0hg6w17"
+path="res://.godot/imported/Light.mp3-86b388419123c5bd660800e5d48588a9.mp3str"
+
+[deps]
+
+source_file="res://MusicTemp/Post-Apocalyptic Soundscapes/Light.mp3"
+dest_files=["res://.godot/imported/Light.mp3-86b388419123c5bd660800e5d48588a9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

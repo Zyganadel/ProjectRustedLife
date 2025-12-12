@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://fh0h5yq2mesr"
+path="res://.godot/imported/Wasteland.mp3-bfe8711e486e59f40cca586e42c92b79.mp3str"
+
+[deps]
+
+source_file="res://MusicTemp/Post-Apocalyptic Soundscapes/Wasteland.mp3"
+dest_files=["res://.godot/imported/Wasteland.mp3-bfe8711e486e59f40cca586e42c92b79.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

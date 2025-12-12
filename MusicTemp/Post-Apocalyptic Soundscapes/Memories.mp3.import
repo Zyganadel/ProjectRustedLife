@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://v05hwxkefoal"
+path="res://.godot/imported/Memories.mp3-a8e9ebb3647ed85f9fc5a8bda7885367.mp3str"
+
+[deps]
+
+source_file="res://MusicTemp/Post-Apocalyptic Soundscapes/Memories.mp3"
+dest_files=["res://.godot/imported/Memories.mp3-a8e9ebb3647ed85f9fc5a8bda7885367.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bmpjyyx3swp14"
+path="res://.godot/imported/Showdown.mp3-92c539524a6ecd04de5bfa53ca85924f.mp3str"
+
+[deps]
+
+source_file="res://MusicTemp/Post-Apocalyptic Soundscapes/Showdown.mp3"
+dest_files=["res://.godot/imported/Showdown.mp3-92c539524a6ecd04de5bfa53ca85924f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

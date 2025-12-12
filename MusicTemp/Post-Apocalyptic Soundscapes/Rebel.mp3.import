@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ca6h3ebmj253y"
+path="res://.godot/imported/Rebel.mp3-f1cbe649ea324a0643457809e24a6c2d.mp3str"
+
+[deps]
+
+source_file="res://MusicTemp/Post-Apocalyptic Soundscapes/Rebel.mp3"
+dest_files=["res://.godot/imported/Rebel.mp3-f1cbe649ea324a0643457809e24a6c2d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

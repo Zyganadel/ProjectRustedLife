@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dmus1krv78nre"
+path="res://.godot/imported/Frenzy.mp3-eae37467e359bb335d4188802d105439.mp3str"
+
+[deps]
+
+source_file="res://MusicTemp/Post-Apocalyptic Soundscapes/Frenzy.mp3"
+dest_files=["res://.godot/imported/Frenzy.mp3-eae37467e359bb335d4188802d105439.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
