@@ -1,18 +1,17 @@
 [gd_scene load_steps=4 format=3 uid="uid://com4wetdkdw50"]
 
-[ext_resource type="Texture2D" uid="uid://bm34nm0lwuop3" path="res://icon.svg" id="1_dwkou"]
 [ext_resource type="Script" uid="uid://bjnbxmifucqam" path="res://src/Gameplay/Player.gd" id="1_px38w"]
+[ext_resource type="PackedScene" uid="uid://c2lcmwdd6ueqc" path="res://Scenes/Prefab/RelicRig.tscn" id="2_86aj7"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_px38w"]
-size = Vector2(120, 120)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3oiha"]
+radius = 16.0
+height = 60.0
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_px38w")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("1_dwkou")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2(0.5, 0.5)
-shape = SubResource("RectangleShape2D_px38w")
+shape = SubResource("CapsuleShape2D_3oiha")
+
+[node name="RelicRig" parent="." instance=ExtResource("2_86aj7")]
